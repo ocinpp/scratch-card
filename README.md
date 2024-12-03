@@ -1,3 +1,3 @@
 # Scratch Card
 
-Created by Bolt
+Created by bolt.new
