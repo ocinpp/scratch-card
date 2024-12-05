@@ -13,7 +13,10 @@ export function useScratchLayer() {
   const drawScratchLayer = async (canvas) => {
     if (!canvas) return;
 
-    const ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext("2d", {
+      willReadFrequently: true,
+    });
+
     if (!ctx) return;
 
     try {
@@ -23,7 +26,7 @@ export function useScratchLayer() {
 
       const pattern = ctx.createPattern(img, "repeat");
       if (pattern) {
-        ctx.globalAlpha = 0.3;
+        ctx.globalAlpha = 1;
         ctx.fillStyle = pattern;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         ctx.globalAlpha = 1;
