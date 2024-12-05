@@ -21,12 +21,14 @@
             <h2 class="text-3xl font-bold mb-3 text-cyan-400 font-cyber">
               {{ cardData.title }}
             </h2>
-            <p class="text-cyan-300 mb-6 leading-relaxed">
+            <p
+              class="text-cyan-300 mb-6 leading-relaxed font-tech text-sm tracking-tight"
+            >
               {{ cardData.description }}
             </p>
           </div>
           <div
-            class="text-sm text-cyan-500 border-t border-cyan-800 pt-4 mt-4 select-none"
+            class="text-xs text-cyan-500 border-t border-cyan-800 pt-4 mt-4 select-none font-cyber-alt opacity-70"
           >
             © 1970 CyberScratch Industries. All rights reserved.
           </div>
@@ -51,7 +53,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, nextTick, watch } from "vue";
+import { ref, onMounted, nextTick } from "vue";
 import { cardData } from "../data/cardData";
 import { useCanvas } from "../composables/useCanvas";
 import { useScratchDetection } from "../composables/useScratchDetection";
@@ -103,10 +105,19 @@ onMounted(async () => {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&family=Syncopate:wght@400;700&display=swap");
 
 .font-cyber {
   font-family: "Orbitron", sans-serif;
+}
+
+.font-tech {
+  font-family: "Share Tech Mono", monospace;
+}
+
+.font-cyber-alt {
+  font-family: "Syncopate", sans-serif;
+  letter-spacing: -0.5px;
 }
 
 canvas {
