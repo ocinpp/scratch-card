@@ -6,9 +6,9 @@
       <div class="relative" ref="containerRef">
         <!-- Content Layer -->
         <div
-          class="p-6 min-h-[500px] flex flex-col transition-all duration-500"
+          class="p-4 h-[600px] w-[360px] flex flex-col transition-all duration-500"
           :style="{
-            opacity: isRevealed ? 1 : 0.3,
+            opacity: isRevealed ? 1 : scratchedPercentage > 0 ? 0.5 : 0,
             transform: isRevealed ? 'scale(1)' : 'scale(0.98)',
           }"
         >
@@ -16,21 +16,22 @@
             <img
               :src="cardData.image"
               :alt="cardData.title"
+              draggable="false"
               class="w-full h-64 object-cover rounded-lg mb-4 border-2 border-cyan-500 shadow-lg shadow-cyan-500/50"
             />
-            <h2 class="text-3xl font-bold mb-3 text-cyan-400 font-cyber">
+            <h2 class="text-xl font-bold mb-3 text-cyan-400 font-cyber">
               {{ cardData.title }}
             </h2>
             <p
-              class="text-cyan-300 mb-6 leading-relaxed font-tech text-sm tracking-tight"
+              class="text-cyan-300 mb-6 leading-normal font-tech text-sm tracking-tight"
             >
               {{ cardData.description }}
             </p>
           </div>
           <div
-            class="text-xs text-cyan-500 border-t border-cyan-800 pt-4 mt-4 select-none font-cyber-alt opacity-70"
+            class="text-xs text-cyan-500 border-t border-cyan-800 pt-4 mt-4 select-none font-cyber-alt opacity-80"
           >
-            © 1970 CyberScratch Industries. All rights reserved.
+            © 2077 CyberScratch Industries. All rights reserved.
           </div>
         </div>
 
