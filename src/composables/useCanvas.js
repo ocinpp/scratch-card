@@ -6,7 +6,10 @@ export function useCanvas() {
   const initCanvas = async (canvas, container) => {
     if (!canvas || !container) return;
 
-    const ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext("2d", {
+      willReadFrequently: true,
+    });
+
     if (!ctx) return;
 
     // Set canvas size to match parent element
@@ -20,7 +23,9 @@ export function useCanvas() {
   const clearArea = (canvas, x, y) => {
     if (!canvas) return;
 
-    const ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext("2d", {
+      willReadFrequently: true,
+    });
     if (!ctx) return;
 
     ctx.globalCompositeOperation = "destination-out";
