@@ -9,7 +9,7 @@
           :alt="card.title"
           class="w-full h-48 object-cover rounded-lg mb-4 border-2 border-cyan-500 shadow-lg shadow-cyan-500/50"
         />
-        <h2 class="text-3xl font-bold mb-3 text-cyan-400 font-cyber">
+        <h2 class="text-2xl font-bold mb-3 text-cyan-400 font-cyber">
           {{ card.title }}
         </h2>
         <p
