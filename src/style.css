@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&family=Syncopate:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  @apply bg-gray-900 min-h-screen flex items-center justify-center p-4;
+  @apply bg-gray-900 min-h-screen p-4;
+}
+
+/* Global font classes */
+.font-cyber {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.font-tech {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.font-cyber-alt {
+  font-family: 'Syncopate', sans-serif;
 }
