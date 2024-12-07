@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto px-4">
-    <div ref="tiltRef" class="w-full max-w-md mx-auto">
+    <div ref="tiltRef" class="w-[360px] mx-auto">
       <div class="relative">
         <div class="relative" ref="containerRef">
           <!-- Content Layer -->
