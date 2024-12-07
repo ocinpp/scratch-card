@@ -34,7 +34,36 @@ const cards = [
     description:
       "Access granted to the most advanced virtual reality hub in the sector. Your consciousness awaits transfer to realms beyond human imagination.",
   },
+  {
+    image:
+      "https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+    title: "Neon Pulse Protocol",
+    description:
+      "Beneath the neon-drenched streets, a new digital pulse emerges. Sync your neural interface to access forbidden datastreams and unlock the secrets of the cyber underground.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+    title: "Binary Soul Interface",
+    description:
+      "The line between human consciousness and artificial intelligence blurs. Experience the next evolution of digital existence through our revolutionary soul-to-binary transfer protocol.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+    title: "Cybernetic Horizon",
+    description:
+      "Beyond the digital veil lies a world of unlimited possibility. Your cybernetic enhancements are the key to unlocking a new frontier of human potential.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1510906594845-bc082582c8cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+    title: "Quantum Ghost Protocol",
+    description:
+      "In the quantum realm, data never truly dies. Navigate the ghost networks and recover lost memories from the digital void.",
+  },
 ];
 
-// Get a random card on each import
+// Export both the array and a random card
+export { cards };
 export const cardData = cards[Math.floor(Math.random() * cards.length)];

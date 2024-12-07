@@ -1,9 +1,5 @@
 <template>
-  <div class="container mx-auto px-4">
-    <ScratchCard />
-  </div>
+  <router-view></router-view>
 </template>
 
-<script setup>
-import ScratchCard from './components/ScratchCard.vue'
-</script>
+<script setup></script>
