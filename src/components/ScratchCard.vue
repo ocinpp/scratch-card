@@ -14,6 +14,9 @@
             <CyberCard :card="cardData" />
           </div>
 
+          <!-- Scratch Indicator -->
+          <ScratchIndicator v-if="!isRevealed && scratchedPercentage === 0" />
+
           <!-- Scratch Canvas Layer -->
           <canvas
             ref="canvasRef"
@@ -41,6 +44,7 @@ import { useScratchDetection } from "../composables/useScratchDetection";
 import { useScratchEvents } from "../composables/useScratchEvents";
 import { useTilt } from "../composables/useTilt";
 import CyberCard from "./CyberCard.vue";
+import ScratchIndicator from "./ScratchIndicator.vue";
 
 const tiltRef = ref(null);
 const containerRef = ref(null);
