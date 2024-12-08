@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-4">
+  <div class="container mx-auto">
     <div ref="tiltRef" class="w-[360px] mx-auto">
       <div class="relative">
         <div class="relative" ref="containerRef">
