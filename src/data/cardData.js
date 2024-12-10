@@ -65,7 +65,7 @@ const cards = [
 ];
 
 // Number of initially revealed cards
-export const REVEALED_CARDS = 8;
+export const REVEALED_CARDS = 2;
 
 // Export both the array and a random card
 export { cards };
