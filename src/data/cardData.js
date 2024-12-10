@@ -64,6 +64,9 @@ const cards = [
   },
 ];
 
+// Number of initially revealed cards
+export const REVEALED_CARDS = 2;
+
 // Export both the array and a random card
 export { cards };
 export const cardData = cards[Math.floor(Math.random() * cards.length)];
