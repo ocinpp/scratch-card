@@ -1,35 +1,37 @@
 <template>
-  <div class="container mx-auto">
-    <div ref="tiltRef" class="w-[360px] mx-auto">
-      <div class="relative">
-        <div class="relative" ref="containerRef">
-          <!-- Content Layer -->
-          <div
-            class="transition-all duration-500"
-            :style="{
-              opacity: isRevealed ? 1 : scratchedPercentage > 0 ? 0.3 : 0,
-              transform: isRevealed ? 'scale(1)' : 'scale(0.98)',
-            }"
-          >
-            <CyberCard :card="cardData" />
+  <div class="min-h-screen flex items-center justify-center">
+    <div class="container mx-auto">
+      <div ref="tiltRef" class="w-[340px] mx-auto">
+        <div class="relative">
+          <div class="relative" ref="containerRef">
+            <!-- Content Layer -->
+            <div
+              class="transition-all duration-500"
+              :style="{
+                opacity: isRevealed ? 1 : scratchedPercentage > 0 ? 0.3 : 0,
+                transform: isRevealed ? 'scale(1)' : 'scale(0.98)',
+              }"
+            >
+              <CyberCard :card="cardData" />
+            </div>
+
+            <!-- Scratch Indicator -->
+            <ScratchIndicator v-if="!isRevealed && scratchedPercentage === 0" />
+
+            <!-- Scratch Canvas Layer -->
+            <canvas
+              ref="canvasRef"
+              @mousedown="startScratching"
+              @mousemove="scratch"
+              @mouseup="stopScratching"
+              @touchstart="handleTouchStart"
+              @touchmove="handleTouchMove"
+              @touchend="stopScratching"
+              class="absolute inset-0 w-full h-full cursor-pointer touch-none transition-opacity duration-500"
+              :class="{ 'pointer-events-none opacity-0': isRevealed }"
+              style="z-index: 10"
+            ></canvas>
           </div>
-
-          <!-- Scratch Indicator -->
-          <ScratchIndicator v-if="!isRevealed && scratchedPercentage === 0" />
-
-          <!-- Scratch Canvas Layer -->
-          <canvas
-            ref="canvasRef"
-            @mousedown="startScratching"
-            @mousemove="scratch"
-            @mouseup="stopScratching"
-            @touchstart="handleTouchStart"
-            @touchmove="handleTouchMove"
-            @touchend="stopScratching"
-            class="absolute inset-0 w-full h-full cursor-pointer touch-none transition-opacity duration-500"
-            :class="{ 'pointer-events-none opacity-0': isRevealed }"
-            style="z-index: 10"
-          ></canvas>
         </div>
       </div>
     </div>
