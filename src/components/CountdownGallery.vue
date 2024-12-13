@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-4 py-8">
+  <div class="container mx-auto px-16 py-8">
     <h1 class="text-4xl font-cyber text-cyan-400 mb-8 text-center">
       Cyberpunk Card Countdown
     </h1>
@@ -17,7 +17,7 @@
         </template>
         <template v-else>
           <div
-            class="w-[360px] h-[600px] rounded-xl overflow-hidden shadow-2xl relative"
+            class="w-[340px] h-[600px] rounded-xl overflow-hidden shadow-2xl relative"
           >
             <div class="absolute inset-0 bg-black/50">
               <div
