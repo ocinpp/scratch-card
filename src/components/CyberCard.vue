@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gradient-to-r from-purple-900 via-cyan-900 to-indigo-900 rounded-xl overflow-hidden shadow-2xl w-[360px] h-[600px]"
+    class="bg-gradient-to-r from-purple-900 via-cyan-900 to-indigo-900 rounded-xl overflow-hidden shadow-2xl w-[340px] h-[600px]"
   >
     <div class="p-6 h-full flex flex-col">
       <div class="flex-1 select-none">
