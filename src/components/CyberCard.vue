@@ -20,7 +20,7 @@
         />
         <h2
           :style="{
-            fontSize: `${24 * scale}px`,
+            fontSize: `${18 * scale}px`,
             marginBottom: `${12 * scale}px`,
             lineHeight: `${28 * scale}px`,
           }"
