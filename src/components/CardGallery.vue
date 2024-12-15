@@ -4,7 +4,7 @@
       Cyberpunk Card Collection
     </h1>
     <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center"
+      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 justify-items-center"
     >
       <div
         v-for="card in cards"
