@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import ScratchCard from "../components/ScratchCard.vue";
 import CardGallery from "../components/CardGallery.vue";
 import CountdownGallery from "../components/CountdownGallery.vue";
+import GallerySmall from "../components/GallerySmall.vue";
 
 const routes = [
   {
@@ -15,6 +16,10 @@ const routes = [
   {
     path: "/countdown",
     component: CountdownGallery,
+  },
+  {
+    path: "/gallery-small",
+    component: GallerySmall,
   },
 ];
 
