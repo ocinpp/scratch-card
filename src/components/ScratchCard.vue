@@ -45,7 +45,7 @@ import { useCanvas } from "../composables/useCanvas";
 import { useScratchDetection } from "../composables/useScratchDetection";
 import { useScratchEvents } from "../composables/useScratchEvents";
 import { useTilt } from "../composables/useTilt";
-import { useConfetti } from "../composables/useConfetti";
+// import { useConfetti } from "../composables/useConfetti";
 import CyberCard from "./CyberCard.vue";
 import ScratchIndicator from "./ScratchIndicator.vue";
 
@@ -54,7 +54,7 @@ const containerRef = ref(null);
 const canvasRef = ref(null);
 
 const { initCanvas, clearArea, clearCanvas } = useCanvas();
-const { fire: fireConfetti } = useConfetti();
+// const { fire: fireConfetti } = useConfetti();
 const {
   isScratching,
   scratchedPercentage,
@@ -68,7 +68,7 @@ const handleReveal = () => {
   if (canvasRef.value) {
     clearCanvas(canvasRef.value);
     initTilt();
-    fireConfetti();
+    // fireConfetti();
   }
 };
 

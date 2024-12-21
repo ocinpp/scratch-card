@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-16 py-8">
+  <div class="container mx-auto px-8 py-8">
     <h1 class="text-4xl font-cyber text-cyan-400 mb-8 text-center">
       Cyberpunk Card Countdown
     </h1>
