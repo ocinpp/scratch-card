@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-dvh flex items-center justify-center">
+  <div class="min-h-svh flex items-center justify-center">
     <div class="container mx-auto">
       <div ref="tiltRef" class="w-[340px] mx-auto">
         <div class="relative">
