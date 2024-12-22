@@ -11,6 +11,7 @@
         <img
           :src="card.image"
           :alt="card.title"
+          crossorigin="anonymous"
           :style="{
             height: `${192 * scale}px`,
             marginBottom: `${16 * scale}px`,
