@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "canvas-confetti": "^1.9.3",
+    "html-to-image": "^1.11.13",
     "vanilla-tilt": "^1.8.0",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4"
