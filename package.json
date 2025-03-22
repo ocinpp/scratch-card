@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.3",
+    "html-to-image": "^1.11.13",
     "vanilla-tilt": "^1.8.0",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4"
